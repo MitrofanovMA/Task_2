@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="UserTests.CreateUserTest" time="3.417" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/mikhail/Desktop/work/JAVA/Project/Task_2/target/test-classes:/Users/mikhail/Desktop/work/JAVA/Project/Task_2/target/classes:/Users/mikhail/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/mikhail/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/mikhail/.m2/repository/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0.jar:/Users/mikhail/.m2/repository/org/codehaus/groovy/groovy/3.0.8/groovy-3.0.8.jar:/Users/mikhail/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.8/groovy-xml-3.0.8.jar:/Users/mikhail/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/mikhail/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/mikhail/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/mikhail/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/mikhail/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/mikhail/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/mikhail/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/mikhail/.m2/repository/io/rest-assured/json-path/4.4.0/json-path-4.4.0.jar:/Users/mikhail/.m2/repository/org/codehaus/groovy/groovy-json/3.0.8/groovy-json-3.0.8.jar:/Users/mikhail/.m2/repository/io/rest-assured/rest-assured-common/4.4.0/rest-assured-common-4.4.0.jar:/Users/mikhail/.m2/repository/io/rest-assured/xml-path/4.4.0/xml-path-4.4.0.jar:/Users/mikhail/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/mikhail/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/mikhail/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/mikhail/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/mikhail/.m2/repository/io/qameta/allure/allure-junit4/2.22.0/allure-junit4-2.22.0.jar:/Users/mikhail/.m2/repository/io/qameta/allure/allure-java-commons/2.22.0/allure-java-commons-2.22.0.jar:/Users/mikhail/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/mikhail/.m2/repository/io/qameta/allure/allure-model/2.22.0/allure-model-2.22.0.jar:/Users/mikhail/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/mikhail/Desktop/work/JAVA/Project/Task_2/target/surefire/surefirebooter-20251107003600580_3.jar /Users/mikhail/Desktop/work/JAVA/Project/Task_2/target/surefire 2025-11-07T00-36-00_447-jvmRun1 surefire-20251107003600580_1tmp surefire_0-20251107003600580_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/mikhail/Desktop/work/JAVA/Project/Task_2/target/test-classes:/Users/mikhail/Desktop/work/JAVA/Project/Task_2/target/classes:/Users/mikhail/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/mikhail/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/mikhail/.m2/repository/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0.jar:/Users/mikhail/.m2/repository/org/codehaus/groovy/groovy/3.0.8/groovy-3.0.8.jar:/Users/mikhail/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.8/groovy-xml-3.0.8.jar:/Users/mikhail/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/mikhail/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/mikhail/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/mikhail/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/mikhail/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/mikhail/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/mikhail/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/mikhail/.m2/repository/io/rest-assured/json-path/4.4.0/json-path-4.4.0.jar:/Users/mikhail/.m2/repository/org/codehaus/groovy/groovy-json/3.0.8/groovy-json-3.0.8.jar:/Users/mikhail/.m2/repository/io/rest-assured/rest-assured-common/4.4.0/rest-assured-common-4.4.0.jar:/Users/mikhail/.m2/repository/io/rest-assured/xml-path/4.4.0/xml-path-4.4.0.jar:/Users/mikhail/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/mikhail/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/mikhail/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/mikhail/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/mikhail/.m2/repository/io/qameta/allure/allure-junit4/2.22.0/allure-junit4-2.22.0.jar:/Users/mikhail/.m2/repository/io/qameta/allure/allure-java-commons/2.22.0/allure-java-commons-2.22.0.jar:/Users/mikhail/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/mikhail/.m2/repository/io/qameta/allure/allure-model/2.22.0/allure-model-2.22.0.jar:/Users/mikhail/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:"/>
+    <property name="allure.results.directory" value="/Users/mikhail/Desktop/work/JAVA/Project/Task_2/target/allure-results"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/mikhail"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-07-15"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/mikhail/Desktop/work/JAVA/Project/Task_2"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/mikhail/Desktop/work/JAVA/Project/Task_2/target/surefire/surefirebooter-20251107003600580_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.28+6-LTS"/>
+    <property name="user.name" value="mikhail"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="26.0.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-11.0.28.6.1"/>
+    <property name="localRepository" value="/Users/mikhail/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="java.io.tmpdir" value="/var/folders/sb/prswt3s126g5yf2bq_wpyn6r0000gn/T/"/>
+    <property name="idea.version" value="2025.1.4"/>
+    <property name="java.version" value="11.0.28"/>
+    <property name="user.dir" value="/Users/mikhail/Desktop/work/JAVA/Project/Task_2"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/mikhail/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="11.0.28+6-LTS"/>
+    <property name="java.specification.maintenance.version" value="3"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="userCreateWithoutRequairedFieldsPassword" classname="UserTests.CreateUserTest" time="0.247">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://stellarburgers.education-services.ru/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "testUser_1762464976611@yandex.ru",
+    "name": "testUser_1762464976612"
+}
+HTTP/1.1 403 Forbidden
+Server: nginx/1.24.0 (Ubuntu)
+Date: Thu, 06 Nov 2025 21:36:16 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 74
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"4a-EmWdisR78lCFKIQWVZ3yQkk5Ixs"
+
+{
+    "success": false,
+    "message": "Email, password and name are required fields"
+}
+HTTP/1.1 403 Forbidden
+Server: nginx/1.24.0 (Ubuntu)
+Date: Thu, 06 Nov 2025 21:36:16 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 74
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"4a-EmWdisR78lCFKIQWVZ3yQkk5Ixs"
+
+{
+    "success": false,
+    "message": "Email, password and name are required fields"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="userCreateWithoutRequairedFieldsName" classname="UserTests.CreateUserTest" time="0.385">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://stellarburgers.education-services.ru/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "testUser_1762464976855@yandex.ru",
+    "password": "password123"
+}
+HTTP/1.1 403 Forbidden
+Server: nginx/1.24.0 (Ubuntu)
+Date: Thu, 06 Nov 2025 21:36:17 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 74
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"4a-EmWdisR78lCFKIQWVZ3yQkk5Ixs"
+
+{
+    "success": false,
+    "message": "Email, password and name are required fields"
+}
+HTTP/1.1 403 Forbidden
+Server: nginx/1.24.0 (Ubuntu)
+Date: Thu, 06 Nov 2025 21:36:17 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 74
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"4a-EmWdisR78lCFKIQWVZ3yQkk5Ixs"
+
+{
+    "success": false,
+    "message": "Email, password and name are required fields"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="userCreateWithoutRequairedFieldsEmail" classname="UserTests.CreateUserTest" time="0.398">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://stellarburgers.education-services.ru/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "password123",
+    "name": "testUser_1762464977269"
+}
+HTTP/1.1 403 Forbidden
+Server: nginx/1.24.0 (Ubuntu)
+Date: Thu, 06 Nov 2025 21:36:17 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 74
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"4a-EmWdisR78lCFKIQWVZ3yQkk5Ixs"
+
+{
+    "success": false,
+    "message": "Email, password and name are required fields"
+}
+HTTP/1.1 403 Forbidden
+Server: nginx/1.24.0 (Ubuntu)
+Date: Thu, 06 Nov 2025 21:36:17 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 74
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"4a-EmWdisR78lCFKIQWVZ3yQkk5Ixs"
+
+{
+    "success": false,
+    "message": "Email, password and name are required fields"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="userCreateNotUniq" classname="UserTests.CreateUserTest" time="1.3">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://stellarburgers.education-services.ru/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "testUser1762464977643@yandex.ru",
+    "password": "password123",
+    "name": "testUser1762464977643"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Thu, 06 Nov 2025 21:36:17 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 391
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MGQxNGQxOTg0MjcwMDAxYmRmNTY5MiIsImlhdCI6MTc2MjQ2NDk3NywiZXhwIjoxNzYyNDY2MTc3fQ.8PACoAo3HoYJBmfSRMyd1xLVHCm--NC9OEnl4IBEFUA
+ETag: W/"187-LzDZ0Dejf1otYlyef6XDQc52X0o"
+
+{
+    "success": true,
+    "user": {
+        "email": "testuser1762464977643@yandex.ru",
+        "name": "testUser1762464977643"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MGQxNGQxOTg0MjcwMDAxYmRmNTY5MiIsImlhdCI6MTc2MjQ2NDk3NywiZXhwIjoxNzYyNDY2MTc3fQ.8PACoAo3HoYJBmfSRMyd1xLVHCm--NC9OEnl4IBEFUA",
+    "refreshToken": "ddc4ec84739b2963e1674718c9b52417d720359f658a244cd29617774dfc254df729c1e4146557e7"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.education-services.ru/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "testuser1762464977643@yandex.ru",
+    "password": "password123",
+    "name": "testUser_1762464977995"
+}
+HTTP/1.1 403 Forbidden
+Server: nginx/1.24.0 (Ubuntu)
+Date: Thu, 06 Nov 2025 21:36:18 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 49
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"31-WKEMg8zALB1Ko0WjUHi/6RBGHVc"
+
+{
+    "success": false,
+    "message": "User already exists"
+}
+HTTP/1.1 403 Forbidden
+Server: nginx/1.24.0 (Ubuntu)
+Date: Thu, 06 Nov 2025 21:36:18 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 49
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"31-WKEMg8zALB1Ko0WjUHi/6RBGHVc"
+
+{
+    "success": false,
+    "message": "User already exists"
+}
+Request method:	DELETE
+Request URI:	https://stellarburgers.education-services.ru/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MGQxNGQxOTg0MjcwMDAxYmRmNTY5MiIsImlhdCI6MTc2MjQ2NDk3NywiZXhwIjoxNzYyNDY2MTc3fQ.8PACoAo3HoYJBmfSRMyd1xLVHCm--NC9OEnl4IBEFUA
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 202 Accepted
+Server: nginx/1.24.0 (Ubuntu)
+Date: Thu, 06 Nov 2025 21:36:18 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="userCreateUniq" classname="UserTests.CreateUserTest" time="1.072">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://stellarburgers.education-services.ru/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "testUser1762464978950@yandex.ru",
+    "password": "password123",
+    "name": "testUser1762464978950"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Thu, 06 Nov 2025 21:36:19 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 391
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MGQxNGQzOTg0MjcwMDAxYmRmNTY5NCIsImlhdCI6MTc2MjQ2NDk3OSwiZXhwIjoxNzYyNDY2MTc5fQ.52tA8HX3iBQtaTZzrlF-UMV72KDjQfyJHqSMjWSEtkk
+ETag: W/"187-yAeMb4uTj9GSW+Zxft83KVUWm2A"
+
+{
+    "success": true,
+    "user": {
+        "email": "testuser1762464978950@yandex.ru",
+        "name": "testUser1762464978950"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MGQxNGQzOTg0MjcwMDAxYmRmNTY5NCIsImlhdCI6MTc2MjQ2NDk3OSwiZXhwIjoxNzYyNDY2MTc5fQ.52tA8HX3iBQtaTZzrlF-UMV72KDjQfyJHqSMjWSEtkk",
+    "refreshToken": "e93481938ac5f999fde266abd7e8927cf8fac1ccbb25795081347d675d99e7946252c159f7b8f6d2"
+}
+Request method:	DELETE
+Request URI:	https://stellarburgers.education-services.ru/api/auth/user
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MGQxNGQzOTg0MjcwMDAxYmRmNTY5NCIsImlhdCI6MTc2MjQ2NDk3OSwiZXhwIjoxNzYyNDY2MTc5fQ.52tA8HX3iBQtaTZzrlF-UMV72KDjQfyJHqSMjWSEtkk
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 202 Accepted
+Server: nginx/1.24.0 (Ubuntu)
+Date: Thu, 06 Nov 2025 21:36:19 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 54
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+
+{
+    "success": true,
+    "message": "User successfully removed"
+}
+]]></system-out>
+  </testcase>
+</testsuite>
